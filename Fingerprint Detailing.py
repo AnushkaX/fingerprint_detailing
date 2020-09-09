@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img = cv2.imread("H:/Sem5/Day3/Images/finger_print.jpg",0)
+img = cv2.imread("Images/finger_print.jpg",0)
 #bin_img1 = cv2.threshold(img, 80, 255, cv2.THRESH_BINARY_INV)[1]
 bin_img = cv2.adaptiveThreshold(img, 255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV, 11,2)
 
